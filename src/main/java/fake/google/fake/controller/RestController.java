@@ -48,7 +48,7 @@ public class RestController {
 
     @GetMapping("web")
     public ResponseEntity trans(){
-        return ResponseEntity.ok(getClientIp());
+        return ResponseEntity.ok(request.getRemoteAddr());
     }
 
 }
