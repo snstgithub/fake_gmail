@@ -23,7 +23,7 @@ public class RestController {
     }
 
 
-    @PostMapping("web")
+    @GetMapping("web")
     public ResponseEntity trans(){
         return ResponseEntity.ok("aaaa");
     }
