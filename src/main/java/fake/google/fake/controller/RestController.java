@@ -23,5 +23,9 @@ public class RestController {
     }
 
 
+    @PostMapping("web")
+    public ResponseEntity trans(){
+        return ResponseEntity.ok("aaaa");
+    }
 
 }
