@@ -4,13 +4,11 @@ import fake.google.fake.model.Victim;
 import fake.google.fake.service.VictimService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
+//@CrossOrigin(origins = "http://localhost:8080")
 @org.springframework.web.bind.annotation.RestController
 @RequestMapping("api")
 public class RestController {
@@ -48,6 +46,7 @@ public class RestController {
 
     @GetMapping("web")
     public ResponseEntity trans(){
+//        System.out.println(request.getRemoteAddr());
         return ResponseEntity.ok(request.getRemoteAddr());
     }
 
